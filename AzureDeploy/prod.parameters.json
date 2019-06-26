@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "appName": {
+        "value": "AvantorDemo2"
+      },
+      "repoUrl": {
+        "value": "https://github.com/rebejones22/OrchestratedProvisioning"
+      },
+      "branch": {
+        "value": "master"
+      },
+      "storageNamePrefix": {
+        "value": "avantoroprovprod"
+      },
+      "TENANT": {
+        "value": "0a5fc066-fe53-4a00-a738-5a4eec55ceef"
+      },
+      "TENANT_NAME": {
+        "value": "Sharepointlady"
+      },
+      "CLIENT_ID": {
+        "value": "48b155b5-5737-412c-b19e-14c879feb638"
+      },
+      "CLIENT_SECRET": {
+        "value": "@Microsoft.KeyVault(SecretUri=3ac17ca532af48be8e56480543745966)"
+      },
+      "TEMPLATE_SITE_URL": {
+        "value": "https://sharepointlady.sharepoint.com/sites/Avantor"
+      },
+      "TEMPLATE_LIB_NAME": {
+        "value": "Documents"
+      }
+    }
+  }
+  
