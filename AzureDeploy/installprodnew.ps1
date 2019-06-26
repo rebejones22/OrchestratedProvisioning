@@ -1,7 +1,7 @@
 # Provision storage and function app
  $script2=Invoke-WebRequest https://raw.githubusercontent.com/rebejones22/OrchestratedProvisioning/master/AzureDeploy/Deploy-AzureResourceGroup.ps1 
  Invoke-Expression $($script2.Content) 
-    -ResourceGroupLocation CentralUS `
+    -ResourceGroupLocation EastUS `
     -ResourceGroupName OrchestratedProvisioningProd `
     -TemplateParametersFile prod.parameters.json
 
