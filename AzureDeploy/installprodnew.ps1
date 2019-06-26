@@ -1,5 +1,5 @@
 # Provision storage and function app
-.\Deploy-AzureResourceGroup.ps1 `
+. \Deploy-AzureResourceGroup.ps1 `
     -ResourceGroupLocation CentralUS `
     -ResourceGroupName OrchestratedProvisioningProd `
     -TemplateParametersFile prod.parameters.json
