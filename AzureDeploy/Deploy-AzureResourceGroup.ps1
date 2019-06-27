@@ -64,8 +64,8 @@ if ($UploadArtifacts) {
     # Create the storage account if it doesn't already exist
     if ($StorageAccount -eq $null) {
         $StorageResourceGroupName = 'ARM_Deploy_Staging'
-        New-AzureRmResourceGroup -Location "$ResourceGroupLocation" -Name $StorageResourceGroupName -Force
-        $StorageAccount = New-AzureRmStorageAccount -StorageAccountName $StorageAccountName -Type 'Standard_LRS' -ResourceGroupName $StorageResourceGroupName -Location "$ResourceGroupLocation"
+        New-AzureRmResourceGroup -Location $ResourceGroupLocation -Name $StorageResourceGroupName -Force
+        $StorageAccount = New-AzureRmStorageAccount -StorageAccountName $StorageAccountName -Type 'Standard_LRS' -ResourceGroupName $StorageResourceGroupName -Location $ResourceGroupLocation
     }
 
     # Generate the value for artifacts location if it is not provided in the parameter file
