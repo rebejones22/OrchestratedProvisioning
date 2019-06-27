@@ -1,7 +1,7 @@
 #Requires -Version 3.0
 
 Param(
-    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
+    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation = 'Central US',
     [string] $ResourceGroupName = 'TeamsProvisioning',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
